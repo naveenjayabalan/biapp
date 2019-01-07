@@ -3427,16 +3427,17 @@ body {
   }
   
   .topbar .topbar-left {
-	background-color: #ffffff;
+	/* background-color: #ffffff; */
 	float: left;
-	height: 70px;
+	/* height: 70px; */
 	position: relative;
 	width: 240px;
 	z-index: 1;
   }
   
   .logo img, .logo-sm img {
-	height: 28px;
+		width: 62%;
+    vertical-align: middle;;
   }
   
   .logo, .logo-sm {
@@ -3444,7 +3445,7 @@ body {
 	font-size: 20px;
 	font-weight: 700;
 	letter-spacing: .03em;
-	line-height: 70px;
+	line-height: 22px;
   }
   
   .logo span, .logo-sm span {
@@ -3629,7 +3630,7 @@ body {
   .side-menu {
 	bottom: 0;
 	top: 0;
-	width: 240px;
+	width: 300px;
 	z-index: 2;
   }
   
@@ -3637,7 +3638,7 @@ body {
 	background: #ffffff;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
 	position: absolute;
-	top: 70px;
+	top: 50px;
 	z-index: 99;
   }
   
@@ -3651,14 +3652,14 @@ body {
   }
   
   .content-page {
-	margin-left: 240px;
+	margin-left: 300px;
 	overflow: hidden;
   }
   
   .content-page > .content {
 	margin-bottom: 60px;
-	margin-top: 70px;
-	padding: 20px 5px 15px 5px;
+	margin-top: 50px;
+	padding: 0;
   }
   
   .button-menu-mobile {
@@ -4237,4 +4238,8 @@ body {
 	  display: none !important;
 	}
   }
-  
+	.mat-tab-label
+	{
+		min-width:50px !important;
+		padding: 0 20px !important;
+	}
