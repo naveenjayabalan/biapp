@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./global.component.css']
 })
 export class GlobalComponent implements OnInit {
+  events: string[] = [];
+  opened: boolean;
 
   constructor() { }
 

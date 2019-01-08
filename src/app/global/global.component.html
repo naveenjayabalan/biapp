@@ -1,11 +1,28 @@
-<app-header></app-header>
-<app-aside-section></app-aside-section>
+<!--  -->
+<!-- <
 <div class="clearfix"></div>
 <div class="content-page">
-    <!-- Start content -->
+    
     <div class="content">
         <app-map></app-map>
         <app-chart-data></app-chart-data>
         <app-grid-table></app-grid-table>
     </div>
+</div> -->
+<div class="top-header">
+    <app-header></app-header>
+</div>
+<div class="right-content">
+    <mat-sidenav-container class="example-container" >
+        <mat-sidenav #sidenav mode="side"  (opened)="events.push('open!')"
+                     (closed)="events.push('close!')">
+          <app-aside-section></app-aside-section>
+        </mat-sidenav>
+      
+        <mat-sidenav-content>
+          <!-- <p><mat-checkbox [(ngModel)]="opened">sidenav.opened</mat-checkbox></p> -->
+          <p><button mat-button (click)="sidenav.toggle()">sidenav.toggle()</button></p>
+         
+        </mat-sidenav-content>
+      </mat-sidenav-container>
 </div>

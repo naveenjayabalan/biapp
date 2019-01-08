@@ -40,7 +40,7 @@ import {FormsModule} from '@angular/forms';
     MatListModule, MatCardModule, MatTabsModule, MatDividerModule, MatSliderModule, MatSelectModule, MatRadioModule, MatNativeDateModule,
     MatDatepickerModule, MatSnackBarModule, MatDialogModule, MatProgressSpinnerModule,
     MatSortModule, MatTableModule, MatCheckboxModule, MatFormFieldModule,  MatInputModule, MatPaginatorModule, MatMenuModule,
-    MatExpansionModule  ],
+    MatExpansionModule ],
 
   providers: [],
   bootstrap: [AppComponent]
