@@ -14,7 +14,7 @@
 </div>
 <div class="right-content">
     <mat-sidenav-container class="example-container" >
-        <mat-sidenav #sidenav mode="side"  (opened)="events.push('open!')"
+        <mat-sidenav #sidenav mode="side" opened (opened)="events.push('open!')"
                      (closed)="events.push('close!')">
           <app-aside-section></app-aside-section>
         </mat-sidenav>
